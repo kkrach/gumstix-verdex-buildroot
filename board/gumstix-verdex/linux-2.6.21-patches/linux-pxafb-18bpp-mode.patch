@@ -263,30 +263,6 @@ Index: linux-2.6.21gum/include/asm-arm/arch-pxa/pxafb.h
  };
  
  struct pxafb_mach_info {
-Index: linux-2.6.21gum/arch/arm/mach-pxa/gumstix.c
-===================================================================
---- linux-2.6.21gum.orig/arch/arm/mach-pxa/gumstix.c
-+++ linux-2.6.21gum/arch/arm/mach-pxa/gumstix.c
-@@ -146,7 +146,8 @@ static struct pxafb_mode_info gumstix_fb
- 	.pixclock	= 110000,
- 	.xres		= 480,
- 	.yres		= 272,
--	.bpp		= 16,
-+	.bpp		= 18,
-+	.nonstd		= 24,
- 	.hsync_len	= 41,
- 	.left_margin	= 2,
- 	.right_margin	= 2,
-@@ -174,7 +175,8 @@ static struct pxafb_mode_info gumstix_fb
- 	.vsync_len	= 10, // VLW from datasheet: 10 typ
- 	.upper_margin	= 2, // VBP - VLW from datasheet: 12 - 10 = 2
- 	.lower_margin	= 4, // VFP from datasheet: 4 typ
--	.bpp		= 16,
-+	.bpp		= 18,
-+	.nonstd		= 24,
- 	.sync		= 0, // Hsync and Vsync both active low
- };
- 
 Index: linux-2.6.21gum/drivers/video/cfbfillrect.c
 ===================================================================
 --- linux-2.6.21gum.orig/drivers/video/cfbfillrect.c
