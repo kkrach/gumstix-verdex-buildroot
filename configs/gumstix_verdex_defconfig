@@ -1,7 +1,7 @@
 BR2_arm=y
 BR2_iwmmxt=y
 BR2_DL_DIR="$(TOPDIR)/../buildroot-downloads"
-BR2_GLOBAL_PATCH_DIR="$(TOPDIR)/../global_patches"
+BR2_GLOBAL_PATCH_DIR="$(TOPDIR)/board/gumstix-verdex/global-patches"
 BR2_KERNEL_HEADERS_VERSION=y
 BR2_DEFAULT_KERNEL_VERSION="2.6.21"
 BR2_GCC_VERSION_4_3_X=y
