@@ -1,0 +1,10 @@
+--- linux-2.6.21-orig/scripts/mod/sumversion.c	2014-03-03 22:16:11.888528630 +0100
++++ linux-2.6.21/scripts/mod/sumversion.c	2014-03-03 22:16:30.996228649 +0100
+@@ -8,6 +8,7 @@
+ #include <errno.h>
+ #include <string.h>
+ #include "modpost.h"
++#include <linux/limits.h>
+ 
+ /*
+  * Stolen form Cryptographic API.
